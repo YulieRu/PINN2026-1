@@ -1,0 +1,14 @@
+1) Generate SSH Key: 
+
+$ ssh-keygen
+
+2) Add to ~/.ssh/config the following:
+
+Host github.com 
+	IdentityFile /home/insert_your_username/.ssh/your_key_name
+
+3) Copy your key.pub: 
+
+$ cat ~/.ssh/your_key_name.pub
+
+and insert it to github (https://www.w3schools.com/git/git_remote_add_ssh.asp?remote=github).
